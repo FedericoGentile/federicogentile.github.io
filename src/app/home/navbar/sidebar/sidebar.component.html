@@ -1,0 +1,28 @@
+  <!-- ======= Header ======= -->
+  <header id="header" [ngStyle]="{'left': symbol ? '-300px': '0px' }">
+    <div class="d-flex flex-column">
+
+      <div class="profile">
+        <img src="assets/img/profile-img.jpg" alt="" class="img-fluid rounded-circle">
+        <h1 class="text-light"><a href="index.html">Federico Gentile</a></h1>
+        <div class="social-links mt-3 text-center">
+          <a href="https://github.com/FedericoGentile" class="github"><i class="fab fa-github"></i></a>
+          <a href="https://stackoverflow.com/users/4143292/federico-gentile" class="stack-overflow"><i class="fab fa-stack-overflow"></i></a>
+          <a href="https://www.linkedin.com/in/federico-gentile-b1091552/" class="linkedin"><i class="fab fa-linkedin"></i></a>
+          <a href="https://www.facebook.com/federico.gentile.1232/" class="facebook"><i class="fab fa-facebook"></i></a>
+        </div>
+      </div>
+
+      <nav id="navbar" class="nav-menu navbar">
+        <ul>
+          <li><a class="nav-link" (click)="toHero()" routerLink="/hero" routerLinkActive="active"><i class="fa-solid fa-house"></i><span class="spanSpace">Home</span></a></li>
+          <li><a class="nav-link" (click)="toAbout()" routerLink="/about" routerLinkActive="active"><i class="fa-solid fa-user"></i><span class="spanSpace">About</span></a></li>
+          <li><a class="nav-link" (click)="toResume()" routerLink="/resume" routerLinkActive="active"><i class="fa-solid fa-file"></i><span class="spanSpace">Resume</span></a></li>
+          <li><a class="nav-link" (click)="toPortfolio()" routerLink="/portfolio" routerLinkActive="active"><i class="fa-solid fa-book"></i><span class="spanSpace">Portfolio</span></a></li>
+          <li><a class="nav-link" (click)="toServices()" routerLink="/services" routerLinkActive="active"><i class="fa-solid fa-server"></i><span class="spanSpace">Services</span></a></li>
+          <li><a class="nav-link" (click)="toContact()" routerLink="/contact" routerLinkActive="active"><i class="fa-solid fa-envelope"></i><span class="spanSpace">Contact</span></a></li>
+        </ul>
+      </nav><!-- .nav-menu -->
+    </div>
+  </header><!-- End Header -->
+ 
